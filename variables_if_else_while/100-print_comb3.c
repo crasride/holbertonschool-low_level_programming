@@ -9,9 +9,9 @@ int main(void)
 {
 	int first, second;
 
-	for (second = '0'; second <= '9'; second++) /*print second place*/
+	for (second = '0'; second < '9'; second++) /*print second place*/
 	{
-	for (first = '0'; first <= '9'; first++) /*print first*/
+	for (first = '0'; first < '9'; first++) /*print first*/
 	{
 	putchar(second);
 	putchar(first);
