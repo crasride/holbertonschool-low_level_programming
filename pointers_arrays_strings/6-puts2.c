@@ -9,8 +9,7 @@ void puts2(char *str)
 {
 	int o = 0;
 
-	while (*(str + o) &&  *(str + o + 1))
-
+	while (*(str + o) &&  (*(str + o - 1) || o == 0))
 	{
 		_putchar(*(str + o));
 		o = o + 2;
