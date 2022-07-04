@@ -1,6 +1,5 @@
 # Usage: variables: CC, SRC
 CC = gcc
-SRC = holberton.c main.c
+SRC = school.c main.c
 all:
 		$(CC) $(SRC) -o school
-
