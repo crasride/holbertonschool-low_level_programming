@@ -1,0 +1,27 @@
+# Create executable for program C
+
+# Compilator
+CC = gcc
+
+# Library source files
+SRC = school.c main.c
+
+# Objects
+OBJ = ${SRC:%.c=%.o}
+
+# Executable name
+NAME = school
+
+# Delete generated files
+RM = rm -f
+
+%.o: %.c m.h
+		${CC} -c -o $@ $<
+all: ${OBJ}
+		${CC} ${OBJ} -o ${NAME}
+clean:
+		${RM) *~ ${NAME}
+oclean:
+		${RM} ${OBJ}
+fclean: clean oclean
+re: oclean 
