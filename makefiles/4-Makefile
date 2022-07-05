@@ -1,41 +1,41 @@
 # Create executable for program C
-  
+
 # Compilator
 CC = gcc
 
 # Library source files
 SRC = school.c main.c
-    
+
 # Objects
-OBJ = ${SRC:%.c=%.o}
- 
+OBJ = ${SRC:%.c=%.o)
+
 # Executable name
 NAME = school
 
 # Your favorite compiler flags
 CFLAGS = -Wall -Werror -Wextra -pedantic
-     
+
 # Delete generated files
 RM = rm -f
 	%.o: %.c m.h
-		${CC} $(CFLAGS) -c -o $@ $<
+		$(CC) $(CFLAGS) -c -o $@ $<
 
 # Rule should recompile only the updated source files
-all: ${OBJ}
-		${CC} ${OBJ} -o ${NAME}
+all: $(OBJ)
+		$(CC) $(OBJ) -o $(NAME)
 
 .PHONY : clean oclean fclean
 
 # Deletes all Emacs and Vim temporary files along with the executable
 clean:
-	${RM) *~ ${NAME}
+	${RM) *~ $(NAME)
 
 # Deletes the object files
 oclean:
-            ${RM} ${OBJ}
-                       
+            $(RM) $(OBJ)
+
 # Deletes all Emacs and Vim temporary files, the executable, and object files
 fclean: clean oclean
-    
+
 # The program to delete files
 re: oclean all
