@@ -13,8 +13,7 @@ void free_list(list_t *head)
 
 	while (head != NULL)
 	{
-		cahe = head; /* release within what the head i*/
-
+		cache = head; /* release within what the head i*/
 		free(cache->str);
 		free(cache);
 		head = head->next; /* moves on to the next node and repeats the process*/
