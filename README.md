@@ -29,7 +29,7 @@ The list of projects contained follows :
 * [C - bit manipulation](./bit_manipulation)
 * [C - file io](./file_io)
 * [C - doubly linked lists](./doubly_linked_lists)
-* [C -  Simple Shell](./../holbertonschool-simple_shell/)
+* [C -  Simple Shell](../holbertonschool-simple_shell/)
 * [C - hash tables](./hash_tables)
 
 ## Author 
