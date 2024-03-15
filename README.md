@@ -10,6 +10,7 @@ The list of projects contained follows :
 * [C - hello world](hello_world)
 * [C - variables, if, else, while](./variables_if_else_while)
 * [C - functions, nested loops](./functions_nested_loops)
+* [C - Makefiles](./makefiles/)
 * [C - debugging](./debugging)
 * [C - more functions, nested loops](./more_functions_nested_loops)
 * [C - pointers, arrays, strings](./pointers_arrays_strings)
